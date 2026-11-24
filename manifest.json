@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Excalisave",
+  "version": "1.0.0",
+  "description": "Save and reopen named drawings on excalidraw.com, stored locally in the extension.",
+  "permissions": ["storage", "unlimitedStorage"],
+  "content_scripts": [
+    {
+      "matches": ["https://excalidraw.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
